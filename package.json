@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack",
+    "build": "node-sass client/src/scss/ -o client/dist/css/ && webpack",
     "start": "cd server/src && node index.js"
   },
   "author": "Phil Nyce",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
+    "node-sass": "^7.0.1",
     "reac": "^0.0.0",
     "react-dom": "^18.0.0"
   },

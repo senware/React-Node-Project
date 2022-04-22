@@ -1,11 +1,25 @@
 import React from 'react'
-import '../css/header.css'
+import Button from './button'
+import '../scss/app.scss'
 
 class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <span>It Works!</span>
+        <div className="buttonBox">
+          <Button
+            label="Login"
+            onClick={() => {
+              console.log(`${this.props.label} button clicked!`)
+            }}
+          />
+          <Button
+            label="Sign Up"
+            onClick={() => {
+              console.log(`${this.props.label} button clicked!`)
+            }}
+          />
+        </div>
       </div>
     )
   }
