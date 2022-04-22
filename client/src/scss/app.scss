@@ -1,8 +1,9 @@
-@import "./button.scss";
-@import "./header.scss";
+@import './button.scss';
+@import './header.scss';
+@import './contentwrapper.css';
 
 body {
   background-color: #121212;
   color: #ffffff;
-  font: bold 1em Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }

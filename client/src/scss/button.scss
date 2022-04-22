@@ -1,7 +1,21 @@
-.button {
+.buttonComponent {
   width: 60px;
   height: 30px;
   margin-left: 10px;
-  background-color: #488286;
+  background-color: #2E2E2E;
+  color: #FFFFFF;
   border: none;
+  font-weight: bold;
+  box-shadow: 0px 8px 10px 1px #00000024, 0px 3px 14px 2px #0000001f,
+    0px 5px 5px -3px #00000005;
+
+  &:hover {
+    background-color: #02eee6;
+    color: #000000;
+  }
 }
+
+// .buttonComponent:hover {
+//   background-color: #007b62 !important;
+//   color: #ffffff !important;
+// }

@@ -4,7 +4,7 @@ import '../scss/app.scss'
 class Button extends React.Component {
   render() {
     return (
-      <button className="button" onClick={this.props.onClick}>
+      <button className="buttonComponent" onClick={this.props.onClick}>
         {this.props.label}
       </button>
     )
