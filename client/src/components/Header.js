@@ -7,7 +7,12 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <BurgerMenu id="burgerMenu" />
+        <BurgerMenu
+          id="burgerMenu"
+          onClick={() => {
+            console.log('Hamburger menu clicked!')
+          }}
+        />
         <span>Text Here</span>
         <div className="buttonBox">
           <Button
