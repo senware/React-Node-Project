@@ -1,11 +1,13 @@
 import React from 'react'
 import Button from './Button'
 import '../scss/app.scss'
+import { ReactComponent as BurgerMenu } from './Hamburger_icon_white.svg'
 
 class Header extends React.Component {
   render() {
     return (
       <div className="header">
+        <BurgerMenu id="burgerMenu" />
         <span>Text Here</span>
         <div className="buttonBox">
           <Button
