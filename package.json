@@ -12,8 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "node-sass": "^7.0.1",
-    "reac": "^0.0.0",
     "react-dom": "^18.0.0",
     "sass-loader": "^12.6.0"
   },
