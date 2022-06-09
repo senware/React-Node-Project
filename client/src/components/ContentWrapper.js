@@ -16,6 +16,7 @@ class ContentWrapper extends React.Component {
       .post('/users/signup', {
         username: 'test',
         password: 'test',
+        verifyPassword: 'test',
       })
       .then(res =>
         console.log(
