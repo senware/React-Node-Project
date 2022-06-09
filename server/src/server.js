@@ -1,15 +1,17 @@
 const path = require('path')
-const bodyParser = require('body-parser')
 const express = require('express')
-const users = require('./users')
-const DatabaseConnector = require('./DatabaseConnector')
+const dotenv = require('dotenv')
+const mongoose = require('mongoose')
+const users = require('./routes/users')
+
+dotenv.config()
 
 const PORT = process.env.PORT || 3000
 const dist = path.join(__dirname, '../../client/dist')
 
 const app = express()
 app.use(express.static(dist))
-app.use(bodyParser.json())
+app.use(express.json())
 app.use('/users', users)
 
 app.get('/', (req, res) => {
@@ -18,13 +20,7 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)
-  DatabaseConnector.connectToDatabase()
+  mongoose.connect(process.env.MONGO_URI, () => {
+    console.log('Database connected.')
+  })
 })
-
-process.on('SIGINT', cleanup)
-process.on('SIGTERM', cleanup)
-
-function cleanup() {
-  DatabaseConnector.closeDatabaseConnection()
-  process.exit()
-}

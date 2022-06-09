@@ -13,9 +13,9 @@ class ContentWrapper extends React.Component {
 
   testInsert() {
     axios
-      .post('/users/test', {
-        name: 'test name',
-        password: 'test password',
+      .post('/users/signup', {
+        username: 'test',
+        password: 'test',
       })
       .then(res =>
         console.log(
