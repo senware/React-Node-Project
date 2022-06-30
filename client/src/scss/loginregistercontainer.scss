@@ -1,0 +1,49 @@
+.LoginRegisterContainer #formContainer {
+    background-color: #202020;
+    width: 50%;
+    margin: 30% auto;
+    padding: 10px 20px;
+}
+
+.LoginRegisterContainer label {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.LoginRegisterContainer input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.LoginRegisterContainer #buttonContainer {
+    display: flex;
+    width: 100%;
+}
+
+.LoginRegisterContainer button {
+    flex-direction: row;
+    // font-weight: bold;
+    font-size: large;
+    width: 100%;
+    margin: 10px 10px;
+    padding: 5px 0;
+    background-color: #383838;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 2px 2px 0px #00000024, 0px 3px 1px -2px #0000001f,
+        0px 1px 5px 0px #00000005;
+
+    &:hover {
+        background-color: #02eee6;
+        color: #000000;
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}

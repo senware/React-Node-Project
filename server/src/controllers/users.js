@@ -1,11 +1,13 @@
-const UserModel = require('../models/SignupModel')
+const UserModel = require('../models/user')
+
 
 const signup = async formData => {
-  const userData = new UserModel({
-    username: formData.username,
-    password: formData.password,
+  const { username, password } = formData
+  const user = new UserModel({
+    username: username,
+    password: password,
   })
-  return userData.save()
+  return user.save()
 }
 
 const getUser = username => {

@@ -1,17 +1,12 @@
-import React from 'react'
-import Header from './components/Header'
-import ContentWrapper from './components/ContentWrapper'
 import './scss/app.scss'
+import LoginRegisterContainer from './components/LoginRegisterContainer'
 
-class App extends React.Component {
-  render() {
-    return (
-      <>
-        <Header />
-        <ContentWrapper />
-      </>
-    )
-  }
+const App = () => {
+  return (
+    <>
+      <LoginRegisterContainer />
+    </>
+  )
 }
 
 export default App

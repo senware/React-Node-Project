@@ -14,8 +14,10 @@
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.6",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
     "sass-loader": "^12.6.0"
   },
   "devDependencies": {
